@@ -19,9 +19,8 @@ submit.addEventListener("click", (e) => {
         document.getElementById("spanButton").innerHTML = "Sucesso!";
         document.getElementById("spanButton").style.color = "#0F7B0F";
         document.getElementById("spanButton").style.left = "32%";
+        document.getElementById("cadastro").reset();
     }
-
-    document.getElementById("cadastro").reset();
 });
 
 function campoObrigatorio(n) {
