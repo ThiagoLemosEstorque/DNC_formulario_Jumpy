@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jumpy</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <img src="/assts/img/logo.svg" alt="Logo DNC" width="90rem">
+    </header>
+
+    <main>
+        <section>
+            <img src="/assts/img/Jumpy.svg" alt="Logo Jumpy" width="150rem">
+            <h3 class="subTitle">Bem vindo ao Jumpy!</h3>
+        </section>
+
+        <section>
+            <form id="cadastro">
+                <div class="input-group">
+                    <input id="nome" type="text" name="nomeCompleto" required autocomplete="off">
+                    <label for="nomeCompleto">Nome</label><br>
+                    <span id="spanNome" class="alert"></span>
+                </div>
+                <div class="input-group">
+                    <input id="email" type="text" name="email" required autocomplete="off">
+                    <label for="email">E-mail</label><br>
+                    <span id="spanEMail" class="alert"></span>
+                </div>
+                <div class="input-group">
+                    <input id="telefone" type="text" name="telefone" required autocomplete="off" oninput="mascaraTelefone(this)">
+                    <label for="telefone">Telefone</label><br>
+                    <span id="spanTelefone" class="alert"></span>
+                </div>
+                <div class="input-group">
+                    <input id="cpf" type="text" name="cpf" required autocomplete="off" oninput="mascaraCpf(this)">
+                    <label for="cpf">CPF</label><br>
+                    <span id="spanCpf" class="alert"></span>
+                </div>
+                <div class="input-group">
+                    <input id="senha" type="password" name="senha" required autocomplete="off">
+                    <label for="senha">Senha</label><br>
+                    <span id="spanSenha" class="alert"></span>
+                </div>
+                <div>
+                    <button id="btnCadastrar">Cadastrar</button><br>
+                    <span id="spanButton" class="btnAlert"></span>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+<script src="validarForm.js"></script>
+<script src="mascaras.js"></script>
+
+</html>
